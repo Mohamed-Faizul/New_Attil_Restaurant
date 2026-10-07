@@ -1,0 +1,25 @@
+{
+  "name": "attil-restaurant",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Attil Multi Cuisine Restaurant — a banana-leaf fresh, gold-grilled single-page experience. Next.js App Router + Tailwind CSS + GSAP ScrollTrigger + Framer Motion + Lenis.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "framer-motion": "^11.11.17",
+    "gsap": "^3.12.5",
+    "lenis": "^1.1.17",
+    "next": "14.2.13",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.14"
+  }
+}

@@ -1,0 +1,182 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ------------------------------------------------------------------ */
+/*  Design tokens                                                      */
+/* ------------------------------------------------------------------ */
+:root {
+  --leaf: #5a8520;
+  --leaf-deep: #1f3d0f;
+  --gold: #ffc222;
+  --gold-soft: #ffd95c;
+  --cream: #fff7e0;
+  --paper: #fdf0c2;
+}
+
+/* ------------------------------------------------------------------ */
+/*  Lenis smooth-scroll base styles                                    */
+/* ------------------------------------------------------------------ */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+html {
+  overflow-x: clip; /* belt & braces: never a horizontal scrollbar */
+}
+
+body {
+  overflow-x: hidden; /* decorative elements may overshoot — never show a scrollbar for them */
+}
+
+::selection {
+  background: var(--gold);
+  color: var(--leaf-deep);
+}
+
+/* ------------------------------------------------------------------ */
+/*  Typography helpers                                                 */
+/* ------------------------------------------------------------------ */
+.font-display {
+  font-family: var(--font-display), 'Baloo 2', 'Bookman Old Style', serif;
+  letter-spacing: 0.01em;
+}
+.font-body {
+  font-family: var(--font-body), 'Nunito', 'Segoe UI', sans-serif;
+}
+
+/* Hollow display text (used in the BIG-WORDS section) */
+.text-stroke {
+  -webkit-text-stroke: 2.5px var(--leaf-deep);
+  color: transparent;
+}
+@media (min-width: 768px) {
+  .text-stroke {
+    -webkit-text-stroke-width: 4px;
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/*  Paper textures (subtle, pure CSS — no image requests)              */
+/* ------------------------------------------------------------------ */
+.texture-dots {
+  background-image: radial-gradient(rgba(31, 61, 15, 0.1) 1.5px, transparent 1.5px);
+  background-size: 22px 22px;
+}
+.texture-dots-light {
+  background-image: radial-gradient(rgba(255, 247, 224, 0.16) 1.5px, transparent 1.5px);
+  background-size: 22px 22px;
+}
+
+/* ------------------------------------------------------------------ */
+/*  Curved cloud dividers                                              */
+/*  Rendered as full-width SVGs with a tiny perpetual left-right sway. */
+/* ------------------------------------------------------------------ */
+.cloud-divider {
+  display: block;
+  width: 100%;
+  height: clamp(52px, 8vw, 120px);
+  margin: -1px 0; /* kills sub-pixel hairlines between sections */
+}
+.cloud-lift {
+  filter: drop-shadow(0 -10px 14px rgba(31, 61, 15, 0.12));
+}
+.cloud-drop {
+  filter: drop-shadow(0 10px 14px rgba(31, 61, 15, 0.12));
+}
+
+@keyframes cloud-drift {
+  from {
+    transform: translateX(-18px);
+  }
+  to {
+    transform: translateX(18px);
+  }
+}
+.cloud-drift {
+  animation: cloud-drift 4.5s ease-in-out infinite alternate;
+  will-change: transform;
+}
+.cloud-drift-slow {
+  animation-duration: 7s;
+}
+
+/* ------------------------------------------------------------------ */
+/*  Custom chain cursor                                                */
+/*  Hidden entirely on touch devices via the media query below.        */
+/* ------------------------------------------------------------------ */
+@media (hover: none), (pointer: coarse) {
+  .cursor-dot,
+  .cursor-line {
+    display: none !important;
+  }
+}
+.cursor-dot {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  will-change: transform;
+}
+/* full-viewport overlay that carries the connecting chain line */
+.cursor-line {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+/* ------------------------------------------------------------------ */
+/*  Cuisine accordion (pure CSS, GPU-friendly `flex` tween)            */
+/* ------------------------------------------------------------------ */
+.cuisine-panel {
+  flex: 1 1 0%;
+  transition: flex 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+}
+@media (hover: hover) and (pointer: fine) {
+  .cuisine-panel:hover,
+  .cuisine-panel:focus-within {
+    flex-grow: 3.4;
+  }
+}
+.cuisine-panel .panel-media {
+  opacity: 0;
+  transform: scale(1.12);
+  transition:
+    opacity 0.45s ease,
+    transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.cuisine-panel:hover .panel-media,
+.cuisine-panel:focus-within .panel-media {
+  opacity: 1;
+  transform: scale(1);
+}
+/* collapsed panels show a rotated vertical label */
+.panel-rotor {
+  writing-mode: vertical-rl;
+}
+
+/* ------------------------------------------------------------------ */
+/*  Reduced motion — freeze every ambient CSS animation                */
+/* ------------------------------------------------------------------ */
+@media (prefers-reduced-motion: reduce) {
+  .cloud-drift,
+  .cloud-drift-slow {
+    animation: none !important;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

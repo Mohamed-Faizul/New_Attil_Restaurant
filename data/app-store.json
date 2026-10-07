@@ -1,0 +1,251 @@
+{
+  "admins": [
+    {
+      "id": "super-admin",
+      "name": "Super Admin",
+      "email": "ennembodi@gmail.com",
+      "passwordHash": "$2a$10$8q0xuT3mxwbP9RRp0NJw8OMKENlNzUkPb2HvT2l3r9iVK33ns06Je",
+      "role": "super",
+      "isActive": true,
+      "createdAt": "2026-10-05T09:30:54.877Z"
+    }
+  ],
+  "dishes": [
+    {
+      "id": "south-indian-0",
+      "name": "Thatte idli",
+      "category": "South Indian",
+      "cuisine": "south-indian",
+      "price": 120,
+      "description": "Steamed, ground and griddled — plates that arrive on a banana leaf and disappear just as fast. A signature favourite from South Indian.",
+      "image": "/images/photos/kothu-parotta.jpg",
+      "available": true,
+      "createdAt": "2026-10-05T09:30:54.877Z"
+    },
+    {
+      "id": "south-indian-1",
+      "name": "Veechu parotta",
+      "category": "South Indian",
+      "cuisine": "south-indian",
+      "price": 138,
+      "description": "Steamed, ground and griddled — plates that arrive on a banana leaf and disappear just as fast. A signature favourite from South Indian.",
+      "image": "/images/photos/kothu-parotta.jpg",
+      "available": true,
+      "createdAt": "2026-10-05T09:30:54.877Z"
+    },
+    {
+      "id": "south-indian-2",
+      "name": "Omelette chilli",
+      "category": "South Indian",
+      "cuisine": "south-indian",
+      "price": 156,
+      "description": "Steamed, ground and griddled — plates that arrive on a banana leaf and disappear just as fast. A signature favourite from South Indian.",
+      "image": "/images/photos/kothu-parotta.jpg",
+      "available": true,
+      "createdAt": "2026-10-05T09:30:54.877Z"
+    },
+    {
+      "id": "north-indian-tandoor-0",
+      "name": "Butter naan",
+      "category": "North Indian & Tandoor",
+      "cuisine": "north-indian-tandoor",
+      "price": 160,
+      "description": "Smoky kebabs, blistered naans and slow gravies — the tandoor section of the menu does the talking. A signature favourite from North Indian & Tandoor.",
+      "image": "/images/photos/seekh-kebab.jpg",
+      "available": true,
+      "createdAt": "2026-10-05T09:30:54.877Z"
+    },
+    {
+      "id": "north-indian-tandoor-1",
+      "name": "Tandoori chicken",
+      "category": "North Indian & Tandoor",
+      "cuisine": "north-indian-tandoor",
+      "price": 178,
+      "description": "Smoky kebabs, blistered naans and slow gravies — the tandoor section of the menu does the talking. A signature favourite from North Indian & Tandoor.",
+      "image": "/images/photos/seekh-kebab.jpg",
+      "available": true,
+      "createdAt": "2026-10-05T09:30:54.877Z"
+    },
+    {
+      "id": "north-indian-tandoor-2",
+      "name": "Paneer tikka",
+      "category": "North Indian & Tandoor",
+      "cuisine": "north-indian-tandoor",
+      "price": 196,
+      "description": "Smoky kebabs, blistered naans and slow gravies — the tandoor section of the menu does the talking. A signature favourite from North Indian & Tandoor.",
+      "image": "/images/photos/seekh-kebab.jpg",
+      "available": true,
+      "createdAt": "2026-10-05T09:30:54.877Z"
+    },
+    {
+      "id": "chinese-0",
+      "name": "Hakka noodles",
+      "category": "Chinese",
+      "cuisine": "chinese",
+      "price": 200,
+      "description": "High-flame noodles, saucy manchurian and fried chicken that crackles — Indo-Chinese, the way street stalls meant it. A signature favourite from Chinese.",
+      "image": "/images/photos/octopus-chicken.jpg",
+      "available": true,
+      "createdAt": "2026-10-05T09:30:54.877Z"
+    },
+    {
+      "id": "chinese-1",
+      "name": "Veg manchurian",
+      "category": "Chinese",
+      "cuisine": "chinese",
+      "price": 218,
+      "description": "High-flame noodles, saucy manchurian and fried chicken that crackles — Indo-Chinese, the way street stalls meant it. A signature favourite from Chinese.",
+      "image": "/images/photos/octopus-chicken.jpg",
+      "available": true,
+      "createdAt": "2026-10-05T09:30:54.877Z"
+    },
+    {
+      "id": "chinese-2",
+      "name": "Schezwan fried chicken",
+      "category": "Chinese",
+      "cuisine": "chinese",
+      "price": 236,
+      "description": "High-flame noodles, saucy manchurian and fried chicken that crackles — Indo-Chinese, the way street stalls meant it. A signature favourite from Chinese.",
+      "image": "/images/photos/octopus-chicken.jpg",
+      "available": true,
+      "createdAt": "2026-10-05T09:30:54.877Z"
+    },
+    {
+      "id": "continental-0",
+      "name": "Herbed pasta",
+      "category": "Continental",
+      "cuisine": "continental",
+      "price": 240,
+      "description": "Herbed pastas, fresh salads and gentle sauces for the nights when the family votes European. A signature favourite from Continental.",
+      "image": "/images/photos/chef-plate.jpg",
+      "available": true,
+      "createdAt": "2026-10-05T09:30:54.877Z"
+    },
+    {
+      "id": "continental-1",
+      "name": "Garden salad",
+      "category": "Continental",
+      "cuisine": "continental",
+      "price": 258,
+      "description": "Herbed pastas, fresh salads and gentle sauces for the nights when the family votes European. A signature favourite from Continental.",
+      "image": "/images/photos/chef-plate.jpg",
+      "available": true,
+      "createdAt": "2026-10-05T09:30:54.877Z"
+    },
+    {
+      "id": "continental-2",
+      "name": "Mussels in sauce",
+      "category": "Continental",
+      "cuisine": "continental",
+      "price": 276,
+      "description": "Herbed pastas, fresh salads and gentle sauces for the nights when the family votes European. A signature favourite from Continental.",
+      "image": "/images/photos/chef-plate.jpg",
+      "available": true,
+      "createdAt": "2026-10-05T09:30:54.877Z"
+    },
+    {
+      "id": "arabian-grill-0",
+      "name": "Al faham chicken",
+      "category": "Arabian Grill",
+      "cuisine": "arabian-grill",
+      "price": 280,
+      "description": "Al faham and skillet grills rubbed with our own masalas, finished over charcoal until the edges whisper. A signature favourite from Arabian Grill.",
+      "image": "/images/photos/al-faham.webp",
+      "available": true,
+      "createdAt": "2026-10-05T09:30:54.877Z"
+    },
+    {
+      "id": "arabian-grill-1",
+      "name": "Skillet grilled chicken",
+      "category": "Arabian Grill",
+      "cuisine": "arabian-grill",
+      "price": 298,
+      "description": "Al faham and skillet grills rubbed with our own masalas, finished over charcoal until the edges whisper. A signature favourite from Arabian Grill.",
+      "image": "/images/photos/al-faham.webp",
+      "available": true,
+      "createdAt": "2026-10-05T09:30:54.877Z"
+    },
+    {
+      "id": "arabian-grill-2",
+      "name": "Pepper grill",
+      "category": "Arabian Grill",
+      "cuisine": "arabian-grill",
+      "price": 316,
+      "description": "Al faham and skillet grills rubbed with our own masalas, finished over charcoal until the edges whisper. A signature favourite from Arabian Grill.",
+      "image": "/images/photos/al-faham.webp",
+      "available": true,
+      "createdAt": "2026-10-05T09:30:54.877Z"
+    },
+    {
+      "id": "signature-0",
+      "name": "Attil biryani",
+      "category": "Signature Specialties",
+      "cuisine": "signature",
+      "price": 320,
+      "description": "Chef’s own creations — including the Attil biryani that regulars order before they even sit down. A signature favourite from Signature Specialties.",
+      "image": "/images/photos/attil-special.jpg",
+      "available": true,
+      "createdAt": "2026-10-05T09:30:54.877Z"
+    },
+    {
+      "id": "signature-1",
+      "name": "Teriyaki glazed chicken",
+      "category": "Signature Specialties",
+      "cuisine": "signature",
+      "price": 338,
+      "description": "Chef’s own creations — including the Attil biryani that regulars order before they even sit down. A signature favourite from Signature Specialties.",
+      "image": "/images/photos/attil-special.jpg",
+      "available": true,
+      "createdAt": "2026-10-05T09:30:54.877Z"
+    },
+    {
+      "id": "signature-2",
+      "name": "Keema pan",
+      "category": "Signature Specialties",
+      "cuisine": "signature",
+      "price": 356,
+      "description": "Chef’s own creations — including the Attil biryani that regulars order before they even sit down. A signature favourite from Signature Specialties.",
+      "image": "/images/photos/attil-special.jpg",
+      "available": true,
+      "createdAt": "2026-10-05T09:30:54.877Z"
+    },
+    {
+      "id": "pantry-0",
+      "name": "Virgin mojito",
+      "category": "Pantry & Beverages",
+      "cuisine": "pantry",
+      "price": 360,
+      "description": "Mojitos, smoothies and little bowls that keep the table busy between the big arrivals. A signature favourite from Pantry & Beverages.",
+      "image": "/images/cutouts/mojito.png",
+      "available": true,
+      "createdAt": "2026-10-05T09:30:54.877Z"
+    },
+    {
+      "id": "pantry-1",
+      "name": "Mukhani smoothie",
+      "category": "Pantry & Beverages",
+      "cuisine": "pantry",
+      "price": 378,
+      "description": "Mojitos, smoothies and little bowls that keep the table busy between the big arrivals. A signature favourite from Pantry & Beverages.",
+      "image": "/images/cutouts/mojito.png",
+      "available": true,
+      "createdAt": "2026-10-05T09:30:54.877Z"
+    },
+    {
+      "id": "pantry-2",
+      "name": "Spanish soup",
+      "category": "Pantry & Beverages",
+      "cuisine": "pantry",
+      "price": 396,
+      "description": "Mojitos, smoothies and little bowls that keep the table busy between the big arrivals. A signature favourite from Pantry & Beverages.",
+      "image": "/images/cutouts/mojito.png",
+      "available": true,
+      "createdAt": "2026-10-05T09:30:54.877Z"
+    }
+  ],
+  "offer": {
+    "name": "Gandhi Jayanti -Oct 2",
+    "percentage": 10,
+    "active": false
+  }
+}
